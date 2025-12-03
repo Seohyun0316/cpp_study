@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int bigger(int a, int b) {
+    if (a > b) return a;
+    else return b;
+}
+
+bool devide(int n) {
+    if (n %= 3) return true;
+    else return false;
+}
+
+int main() {
+    int a, b, n;
+    cout << "두 개의 정수 입력";
+    cin >> a>> b;
+    n= bigger(a, b);
+    cout << "더 큰 수는 " << n << "입니다." << endl;
+
+    bool m = n;
+	m = devide(n);
+    if (m = true)
+        {
+        cout << n << "은(는) 3의 배수입니다." << endl;
+    }
+    else {
+        cout << n << "은(는) 3의 배수가 아닙니다." << endl;
+	}
+    
+
+
+    
+}
