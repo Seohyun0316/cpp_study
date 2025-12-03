@@ -8,20 +8,17 @@ int main() {
     cout << "Input month: ";
     cin >> month;
 
-    // 31ÀÏÀÎ ¿ù
+    // 31ì¼ì¸ ì›”
     if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
         cout << "31 days in month " << month;
 
-    // 2¿ù
+    // 2ì›”
     else if (month == 2)
         cout << "28 days in month 2";
 
-    // 30ÀÏÀÎ ¿ù
+    // 30ì¼ì¸ ì›”
     else if (month == 4 || month == 6 || month == 9 || month == 11)
         cout << "30 days in month " << month;
-
-
-    //1~12¿ÜÀÇ ÀÔ·ÂÀÌ µé¾î¿À´Â °æ¿ì
 
 
     return 0;
