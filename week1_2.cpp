@@ -1,4 +1,4 @@
-ï»¿#include <iostream>
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -8,20 +8,20 @@ int main() {
     cout << "Input month: ";
     cin >> month;
 
-    // 31ì¼ì¸ ì›”
+    // 31ÀÏÀÎ ¿ù
     if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
         cout << "31 days in month " << month;
 
-    // 2ì›”
+    // 2¿ù
     else if (month == 2)
         cout << "28 days in month 2";
 
-    // 30ì¼ì¸ ì›”
+    // 30ÀÏÀÎ ¿ù
     else if (month == 4 || month == 6 || month == 9 || month == 11)
         cout << "30 days in month " << month;
 
 
-    //1~12ì™¸ì˜ ì…ë ¥ì´ ë“¤ì–´ì˜¤ëŠ” ê²½ìš°
+    //1~12¿ÜÀÇ ÀÔ·ÂÀÌ µé¾î¿À´Â °æ¿ì
 
 
     return 0;
