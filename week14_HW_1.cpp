@@ -25,8 +25,8 @@ int main() {
         cout << "phone number: ";
         cin >> phone_number;
 
-        // 엑셀 파일에 입력 정보 저장
-        fout << name << "," << address << "," << phone_number << "\n";
+        // 엑셀 파일에 입력 정보 저장 (탭으로 구분)
+        fout << name << "\t" << address << "\t" << phone_number << "\n";
     }
 
     fout.close();  // 파일 닫기
@@ -43,14 +43,16 @@ int main() {
 
     string line;
     while (getline(fin, line)) {
-        size_t pos1 = line.find(',');
-        size_t pos2 = line.rfind(',');
+        size_t pos1 = line.find('\t');  // 첫 번째 탭 찾기
+        size_t pos2 = line.rfind('\t'); // 마지막 탭 찾기
 
         if (pos1 != string::npos && pos2 != string::npos && pos1 != pos2) {
+            // 탭 기준으로 각 항목 추출
             string name = line.substr(0, pos1);
             string address = line.substr(pos1 + 1, pos2 - pos1 - 1);
             string phone = line.substr(pos2 + 1);
 
+            // 읽은 데이터를 출력
             cout << left << setw(20) << name << setw(30) << address << setw(15) << phone << endl;
         }
     }
