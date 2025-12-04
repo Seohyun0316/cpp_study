@@ -5,6 +5,16 @@
 using namespace std;
 
 int main() {
+
+    // ----- 과제 안내 출력 형식 -----
+    cout << "==================== \n";
+    cout << "학과 : 사이버보안\n";
+    cout << "학번 : 2271085\n";
+    cout << "이름 : 양서현\n";
+    cout << "==================== \n\n";
+    // ------------------------------
+
+
     string name, address;
     int phone_number;
     ofstream fout("phonebook.xls", ios::app);  // 엑셀 파일을 append 모드로 열기
